@@ -136,7 +136,7 @@
                 </a>
               </div>
               <!-- /Logo -->
-              <p class="mb-4">Register now and get in straight away 🚀</p>
+              <p class="mb-4">Register now and log in immediately 🚀</p>
 
               <form id="formAuthentication" class="mb-3" action="{{ 'actionRegister' }}" method="POST">
                 @csrf
@@ -157,6 +157,20 @@
                 </div>
                 <div class="mb-3 form-password-toggle">
                   <label class="form-label" for="password">Password</label>
+                  <div class="input-group input-group-merge">
+                    <input
+                      type="password"
+                      id="password"
+                      class="form-control"
+                      name="password"
+                      placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                      aria-describedby="password"
+                    />
+                    <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                  </div>
+                </div>
+                <div class="mb-3 form-password-toggle">
+                  <label class="form-label" for="password">Re-Password</label>
                   <div class="input-group input-group-merge">
                     <input
                       type="password"

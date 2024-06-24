@@ -136,7 +136,7 @@
                 </a>
               </div>
               <!-- /Logo -->
-              <span class="brand-text demo fw-bolder">Welcome to PPKD Jakarta Pusat! 👋</span>
+              <span class="brand-text demo fw-bolder">Welcome to this website! 👋</span>
               <p class="mb-4">Please sign-in to your account and start</p>
 
               <form id="formAuthentication" class="mb-3" action="{{ route('actionLogin') }}" method="POST">
