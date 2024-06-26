@@ -1,15 +1,63 @@
-<script src="dist/assets/modules/jquery.min.js"></script>
-<script src="dist/assets/modules/popper.js"></script>
-<script src="dsit/assets/modules/tooltip.js"></script>
-<script src="dist/assets/modules/bootstrap/js/bootstrap.min.js"></script>
-<script src="dist/assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
-<script src="dist/assets/modules/moment.min.js"></script>
-<script src="dist/assets/js/stisla.js"></script>
+<script src="{{ asset('assets/kai/assets/js/core/jquery-3.7.1.min.js') }}"></script>
+<script src="{{ asset('assets/kai/assets/js/core/popper.min.js') }}"></script>
+<script src="{{ asset('assets/kai/assets/js/core/bootstrap.min.js') }}"></script>
 
-<!-- JS Libraies -->
+<!-- jQuery Scrollbar -->
+<script src="{{ asset('assets/kai/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
 
-<!-- Page Specific JS File -->
+<!-- Chart JS -->
+<script src="{{ asset('assets/kai/assets/js/plugin/chart.js/chart.min.js') }}"></script>
 
-<!-- Template JS File -->
-<script src="dist/assets/js/scripts.js"></script>
-<script src="dist/assets/js/custom.js"></script>
+<!-- jQuery Sparkline -->
+<script src="{{ asset('assets/kai/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js') }}"></script>
+
+<!-- Chart Circle -->
+<script src="{{ asset('assets/kai/assets/js/plugin/chart-circle/circles.min.js') }}"></script>
+
+<!-- Datatables -->
+<script src="{{ asset('assets/kai/assets/js/plugin/datatables/datatables.min.js') }}"></script>
+
+<!-- Bootstrap Notify -->
+<script src="{{ asset('assets/kai/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
+
+<!-- jQuery Vector Maps -->
+<script src="{{ asset('assets/kai/assets/js/plugin/jsvectormap/jsvectormap.min.js') }}"></script>
+<script src="{{ asset('assets/kai/assets/js/plugin/jsvectormap/world.js') }}"></script>
+
+<!-- Sweet Alert -->
+<script src="{{ asset('assets/kai/assets/js/plugin/sweetalert/sweetalert.min.js') }}"></script>
+
+<!-- Kaiadmin JS -->
+<script src="{{ asset('assets/kai/assets/js/kaiadmin.min.js') }}"></script>
+
+<!-- Kaiadmin DEMO methods, don't include it in your project! -->
+<script src="{{ asset('assets/kai/assets/js/setting-demo.js') }}"></script>
+<script src="{{ asset('assets/kai/assets/js/demo.js') }}"></script>
+<script>
+    $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#177dff",
+        fillColor: "rgba(23, 125, 255, 0.14)",
+    });
+
+    $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#f3545d",
+        fillColor: "rgba(243, 84, 93, .14)",
+    });
+
+    $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
+        type: "line",
+        height: "70",
+        width: "100%",
+        lineWidth: "2",
+        lineColor: "#ffa534",
+        fillColor: "rgba(255, 165, 52, .14)",
+    });
+</script>

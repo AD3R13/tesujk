@@ -1,22 +1,27 @@
-<footer class="content-footer footer bg-footer-theme">
-    <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-        <div class="mb-2 mb-md-0">
-            ©
-            <script>
-                document.write(new Date().getFullYear());
-            </script>
-            , made with ❤️ by
-            <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+<footer class="footer">
+    <div class="container-fluid d-flex justify-content-between">
+        <nav class="pull-left">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.themekita.com">
+                        ThemeKita
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Help </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Licenses </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            2024, made with <i class="fa fa-heart heart text-danger"></i> by
+            <a href="http://www.themekita.com">ThemeKita</a>
         </div>
         <div>
-            <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-            <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
-
-            <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" target="_blank"
-                class="footer-link me-4">Documentation</a>
-
-            <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank"
-                class="footer-link me-4">Support</a>
+            Distributed by
+            <a target="_blank" href="https://themewagon.com/">ThemeWagon</a>.
         </div>
     </div>
 </footer>

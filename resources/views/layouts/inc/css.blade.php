@@ -1,8 +1,6 @@
-<link rel="stylesheet" href="dist/assets/modules/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="dist/assets/modules/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="{{ asset('assets/kai/assets/css/bootstrap.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/kai/assets/css/plugins.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/kai/assets/css/kaiadmin.min.css') }}" />
 
-<!-- CSS Libraries -->
-
-<!-- Template CSS -->
-<link rel="stylesheet" href="dist/assets/css/style.css">
-<link rel="stylesheet" href="dist/assets/css/components.css">
+<!-- CSS Just for demo purpose, don't include it in your project -->
+<link rel="stylesheet" href="{{ asset('assets/kai/assets/css/demo.css') }}" />

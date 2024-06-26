@@ -23,17 +23,40 @@ class LoginController extends Controller
     public function actionLogin(Request $request)
     {
         $request->validate([
-            'email' => 'required',
+            'email' => 'required|email',
             'password' => 'required',
         ]);
+
         $credentials = $request->only('email', 'password');
-        if (Auth()->attempt($credentials)) {
-            $request->session()->regenerate();
-            return redirect()->to('home');
+
+        if (Auth::attempt($credentials)) {
+            $user = Auth::user();
+
+            if ($user->usertype == "admin-pelatihan") {
+                $request->session()->regenerate();
+                return redirect()->route('home', ['usertype' => $user->usertype]);
+            } else if ($user->usertype == "administrator") {
+                $request->session()->regenerate();
+                return redirect()->route('home', ['usertype' => $user->usertype]);
+            }
         }
-        Alert::info('Login gagal!', 'Mohon periksa kembali email dan password anda!');
-        return back();
+
+        // Jika login gagal
+        Alert::info('Login gagal!', 'Mohon periksa kembali email dan password Anda.');
+        return back()->withInput($request->only('email'));
     }
+
+
+    public function actionLogout(Request $request)
+    {
+        Auth::logout(); // Logout pengguna
+        $request->session()->invalidate(); // Menonaktifkan session pengguna
+        $request->session()->regenerateToken(); // Menghasilkan token baru untuk sesi
+
+        // Redirect ke halaman login
+        return redirect()->route('login');
+    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -56,14 +79,6 @@ class LoginController extends Controller
         User::create($request->all());
         Alert::success('Daftar berhasil', 'Success Message!');
         return redirect()->to('register')->with('success', 'Daftar berhasil');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
     }
 
     /**

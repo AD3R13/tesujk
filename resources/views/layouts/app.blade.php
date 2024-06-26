@@ -2,462 +2,646 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Blank Page &mdash; Stisla</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Templates UJK</title>
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+    <link rel="icon" href="{{ asset('assets/kai/assets/img/kaiadmin/favicon.ico') }}" type="image/x-icon" />
 
-    <!-- General CSS Files -->
+    <!-- Fonts and icons -->
+    @include('layouts.inc.script')
+    <!-- CSS Files -->
     @include('layouts.inc.css')
-    <!-- Start GA -->
-    <script async src="dist/https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-94034622-3');
-    </script>
-    <!-- /END GA -->
 </head>
 
 <body>
-    <div id="app">
-        <div class="main-wrapper main-wrapper-1">
-            <div class="navbar-bg"></div>
-            <nav class="navbar navbar-expand-lg main-navbar">
-                <form class="form-inline mr-auto">
-                    <ul class="navbar-nav mr-3">
-                        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i
-                                    class="fas fa-bars"></i></a></li>
-                        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i
-                                    class="fas fa-search"></i></a></li>
-                    </ul>
-                    <div class="search-element">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search"
-                            data-width="250">
-                        <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-                        <div class="search-backdrop"></div>
-                        <div class="search-result">
-                            <div class="search-header">
-                                Histories
-                            </div>
-                            <div class="search-item">
-                                <a href="#">How to hack NASA using CSS</a>
-                                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
-                            </div>
-                            <div class="search-item">
-                                <a href="#">Kodinger.com</a>
-                                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
-                            </div>
-                            <div class="search-item">
-                                <a href="#">#Stisla</a>
-                                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
-                            </div>
-                            <div class="search-header">
-                                Result
-                            </div>
-                            <div class="search-item">
-                                <a href="#">
-                                    <img class="mr-3 rounded" width="30" src="assets/img/products/product-3-50.png"
-                                        alt="product">
-                                    oPhone S9 Limited Edition
-                                </a>
-                            </div>
-                            <div class="search-item">
-                                <a href="#">
-                                    <img class="mr-3 rounded" width="30" src="assets/img/products/product-2-50.png"
-                                        alt="product">
-                                    Drone X2 New Gen-7
-                                </a>
-                            </div>
-                            <div class="search-item">
-                                <a href="#">
-                                    <img class="mr-3 rounded" width="30" src="assets/img/products/product-1-50.png"
-                                        alt="product">
-                                    Headphone Blitz
-                                </a>
-                            </div>
-                            <div class="search-header">
-                                Projects
-                            </div>
-                            <div class="search-item">
-                                <a href="#">
-                                    <div class="search-icon bg-danger text-white mr-3">
-                                        <i class="fas fa-code"></i>
-                                    </div>
-                                    Stisla Admin Template
-                                </a>
-                            </div>
-                            <div class="search-item">
-                                <a href="#">
-                                    <div class="search-icon bg-primary text-white mr-3">
-                                        <i class="fas fa-laptop"></i>
-                                    </div>
-                                    Create a new Homepage Design
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <ul class="navbar-nav navbar-right">
-                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-                            class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
-                        <div class="dropdown-menu dropdown-list dropdown-menu-right">
-                            <div class="dropdown-header">Messages
-                                <div class="float-right">
-                                    <a href="#">Mark All As Read</a>
-                                </div>
-                            </div>
-                            <div class="dropdown-list-content dropdown-list-message">
-                                <a href="#" class="dropdown-item dropdown-item-unread">
-                                    <div class="dropdown-item-avatar">
-                                        <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle">
-                                        <div class="is-online"></div>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        <b>Kusnaedi</b>
-                                        <p>Hello, Bro!</p>
-                                        <div class="time">10 Hours Ago</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="dropdown-item dropdown-item-unread">
-                                    <div class="dropdown-item-avatar">
-                                        <img alt="image" src="assets/img/avatar/avatar-2.png" class="rounded-circle">
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        <b>Dedik Sugiharto</b>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                        <div class="time">12 Hours Ago</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="dropdown-item dropdown-item-unread">
-                                    <div class="dropdown-item-avatar">
-                                        <img alt="image" src="assets/img/avatar/avatar-3.png"
-                                            class="rounded-circle">
-                                        <div class="is-online"></div>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        <b>Agung Ardiansyah</b>
-                                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <div class="time">12 Hours Ago</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <div class="dropdown-item-avatar">
-                                        <img alt="image" src="assets/img/avatar/avatar-4.png"
-                                            class="rounded-circle">
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        <b>Ardian Rahardiansyah</b>
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
-                                        <div class="time">16 Hours Ago</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <div class="dropdown-item-avatar">
-                                        <img alt="image" src="assets/img/avatar/avatar-5.png"
-                                            class="rounded-circle">
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        <b>Alfa Zulkarnain</b>
-                                        <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                                        <div class="time">Yesterday</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="dropdown-footer text-center">
-                                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-                            class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
-                        <div class="dropdown-menu dropdown-list dropdown-menu-right">
-                            <div class="dropdown-header">Notifications
-                                <div class="float-right">
-                                    <a href="#">Mark All As Read</a>
-                                </div>
-                            </div>
-                            <div class="dropdown-list-content dropdown-list-icons">
-                                <a href="#" class="dropdown-item dropdown-item-unread">
-                                    <div class="dropdown-item-icon bg-primary text-white">
-                                        <i class="fas fa-code"></i>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        Template update is available now!
-                                        <div class="time text-primary">2 Min Ago</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <div class="dropdown-item-icon bg-info text-white">
-                                        <i class="far fa-user"></i>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        <b>You</b> and <b>Dedik Sugiharto</b> are now friends
-                                        <div class="time">10 Hours Ago</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <div class="dropdown-item-icon bg-success text-white">
-                                        <i class="fas fa-check"></i>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        <b>Kusnaedi</b> has moved task <b>Fix bug header</b> to <b>Done</b>
-                                        <div class="time">12 Hours Ago</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <div class="dropdown-item-icon bg-danger text-white">
-                                        <i class="fas fa-exclamation-triangle"></i>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        Low disk space. Let's clean it!
-                                        <div class="time">17 Hours Ago</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <div class="dropdown-item-icon bg-info text-white">
-                                        <i class="fas fa-bell"></i>
-                                    </div>
-                                    <div class="dropdown-item-desc">
-                                        Welcome to Stisla template!
-                                        <div class="time">Yesterday</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="dropdown-footer text-center">
-                                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="dropdown"><a href="#" data-toggle="dropdown"
-                            class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                            <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-                            <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <div class="dropdown-title">Logged in 5 min ago</div>
-                            <a href="features-profile.html" class="dropdown-item has-icon">
-                                <i class="far fa-user"></i> Profile
-                            </a>
-                            <a href="features-activities.html" class="dropdown-item has-icon">
-                                <i class="fas fa-bolt"></i> Activities
-                            </a>
-                            <a href="features-settings.html" class="dropdown-item has-icon">
-                                <i class="fas fa-cog"></i> Settings
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item has-icon text-danger">
-                                <i class="fas fa-sign-out-alt"></i> Logout
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-            <div class="main-sidebar sidebar-style-2">
-                <aside id="sidebar-wrapper">
-                    <div class="sidebar-brand">
-                        <a href="index.html">Stisla</a>
-                    </div>
-                    <div class="sidebar-brand sidebar-brand-sm">
-                        <a href="index.html">St</a>
-                    </div>
-                    <ul class="sidebar-menu">
-                        <li class="menu-header">Dashboard</li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i
-                                    class="fas fa-fire"></i><span>Dashboard</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="index-0.html">General Dashboard</a></li>
-                                <li><a class="nav-link" href="index.html">Ecommerce Dashboard</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-header">Starter</li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i
-                                    class="fas fa-columns"></i> <span>Layout</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="layout-default.html">Default Layout</a></li>
-                                <li><a class="nav-link" href="layout-transparent.html">Transparent Sidebar</a></li>
-                                <li><a class="nav-link" href="layout-top-navigation.html">Top Navigation</a></li>
-                            </ul>
-                        </li>
-                        <li class=active><a class="nav-link" href="blank.html"><i class="far fa-square"></i>
-                                <span>Blank Page</span></a></li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i>
-                                <span>Bootstrap</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="bootstrap-alert.html">Alert</a></li>
-                                <li><a class="nav-link" href="bootstrap-badge.html">Badge</a></li>
-                                <li><a class="nav-link" href="bootstrap-breadcrumb.html">Breadcrumb</a></li>
-                                <li><a class="nav-link" href="bootstrap-buttons.html">Buttons</a></li>
-                                <li><a class="nav-link" href="bootstrap-card.html">Card</a></li>
-                                <li><a class="nav-link" href="bootstrap-carousel.html">Carousel</a></li>
-                                <li><a class="nav-link" href="bootstrap-collapse.html">Collapse</a></li>
-                                <li><a class="nav-link" href="bootstrap-dropdown.html">Dropdown</a></li>
-                                <li><a class="nav-link" href="bootstrap-form.html">Form</a></li>
-                                <li><a class="nav-link" href="bootstrap-list-group.html">List Group</a></li>
-                                <li><a class="nav-link" href="bootstrap-media-object.html">Media Object</a></li>
-                                <li><a class="nav-link" href="bootstrap-modal.html">Modal</a></li>
-                                <li><a class="nav-link" href="bootstrap-nav.html">Nav</a></li>
-                                <li><a class="nav-link" href="bootstrap-navbar.html">Navbar</a></li>
-                                <li><a class="nav-link" href="bootstrap-pagination.html">Pagination</a></li>
-                                <li><a class="nav-link" href="bootstrap-popover.html">Popover</a></li>
-                                <li><a class="nav-link" href="bootstrap-progress.html">Progress</a></li>
-                                <li><a class="nav-link" href="bootstrap-table.html">Table</a></li>
-                                <li><a class="nav-link" href="bootstrap-tooltip.html">Tooltip</a></li>
-                                <li><a class="nav-link" href="bootstrap-typography.html">Typography</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-header">Stisla</li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-th-large"></i>
-                                <span>Components</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="components-article.html">Article</a></li>
-                                <li><a class="nav-link beep beep-sidebar" href="components-avatar.html">Avatar</a>
-                                </li>
-                                <li><a class="nav-link" href="components-chat-box.html">Chat Box</a></li>
-                                <li><a class="nav-link beep beep-sidebar" href="components-empty-state.html">Empty
-                                        State</a></li>
-                                <li><a class="nav-link" href="components-gallery.html">Gallery</a></li>
-                                <li><a class="nav-link beep beep-sidebar" href="components-hero.html">Hero</a></li>
-                                <li><a class="nav-link" href="components-multiple-upload.html">Multiple Upload</a>
-                                </li>
-                                <li><a class="nav-link beep beep-sidebar" href="components-pricing.html">Pricing</a>
-                                </li>
-                                <li><a class="nav-link" href="components-statistic.html">Statistic</a></li>
-                                <li><a class="nav-link" href="components-tab.html">Tab</a></li>
-                                <li><a class="nav-link" href="components-table.html">Table</a></li>
-                                <li><a class="nav-link" href="components-user.html">User</a></li>
-                                <li><a class="nav-link beep beep-sidebar" href="components-wizard.html">Wizard</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i>
-                                <span>Forms</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="forms-advanced-form.html">Advanced Form</a></li>
-                                <li><a class="nav-link" href="forms-editor.html">Editor</a></li>
-                                <li><a class="nav-link" href="forms-validation.html">Validation</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-map-marker-alt"></i>
-                                <span>Google Maps</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="gmaps-advanced-route.html">Advanced Route</a></li>
-                                <li><a href="gmaps-draggable-marker.html">Draggable Marker</a></li>
-                                <li><a href="gmaps-geocoding.html">Geocoding</a></li>
-                                <li><a href="gmaps-geolocation.html">Geolocation</a></li>
-                                <li><a href="gmaps-marker.html">Marker</a></li>
-                                <li><a href="gmaps-multiple-marker.html">Multiple Marker</a></li>
-                                <li><a href="gmaps-route.html">Route</a></li>
-                                <li><a href="gmaps-simple.html">Simple</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-plug"></i>
-                                <span>Modules</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="modules-calendar.html">Calendar</a></li>
-                                <li><a class="nav-link" href="modules-chartjs.html">ChartJS</a></li>
-                                <li><a class="nav-link" href="modules-datatables.html">DataTables</a></li>
-                                <li><a class="nav-link" href="modules-flag.html">Flag</a></li>
-                                <li><a class="nav-link" href="modules-font-awesome.html">Font Awesome</a></li>
-                                <li><a class="nav-link" href="modules-ion-icons.html">Ion Icons</a></li>
-                                <li><a class="nav-link" href="modules-owl-carousel.html">Owl Carousel</a></li>
-                                <li><a class="nav-link" href="modules-sparkline.html">Sparkline</a></li>
-                                <li><a class="nav-link" href="modules-sweet-alert.html">Sweet Alert</a></li>
-                                <li><a class="nav-link" href="modules-toastr.html">Toastr</a></li>
-                                <li><a class="nav-link" href="modules-vector-map.html">Vector Map</a></li>
-                                <li><a class="nav-link" href="modules-weather-icon.html">Weather Icon</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-header">Pages</li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i>
-                                <span>Auth</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="auth-forgot-password.html">Forgot Password</a></li>
-                                <li><a href="auth-login.html">Login</a></li>
-                                <li><a href="auth-register.html">Register</a></li>
-                                <li><a href="auth-reset-password.html">Reset Password</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i>
-                                <span>Errors</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="errors-503.html">503</a></li>
-                                <li><a class="nav-link" href="errors-403.html">403</a></li>
-                                <li><a class="nav-link" href="errors-404.html">404</a></li>
-                                <li><a class="nav-link" href="errors-500.html">500</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-bicycle"></i>
-                                <span>Features</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="features-activities.html">Activities</a></li>
-                                <li><a class="nav-link" href="features-post-create.html">Post Create</a></li>
-                                <li><a class="nav-link" href="features-posts.html">Posts</a></li>
-                                <li><a class="nav-link" href="features-profile.html">Profile</a></li>
-                                <li><a class="nav-link" href="features-settings.html">Settings</a></li>
-                                <li><a class="nav-link" href="features-setting-detail.html">Setting Detail</a></li>
-                                <li><a class="nav-link" href="features-tickets.html">Tickets</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i>
-                                <span>Utilities</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="utilities-contact.html">Contact</a></li>
-                                <li><a class="nav-link" href="utilities-invoice.html">Invoice</a></li>
-                                <li><a href="utilities-subscribe.html">Subscribe</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="nav-link" href="credits.html"><i class="fas fa-pencil-ruler"></i>
-                                <span>Credits</span></a></li>
-                    </ul>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        @include('layouts.inc.sidebar')
+        <!-- End Sidebar -->
 
-                    <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
-                        <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
-                            <i class="fas fa-rocket"></i> Documentation
+        <div class="main-panel">
+            <div class="main-header">
+                <div class="main-header-logo">
+                    <!-- Logo Header -->
+                    <div class="logo-header" data-background-color="dark">
+                        <a href="index.html" class="logo">
+                            <img src="assets/kai/assets/img/kaiadmin/logo_light.svg" alt="navbar brand"
+                                class="navbar-brand" height="20" />
                         </a>
+                        <div class="nav-toggle">
+                            <button class="btn btn-toggle toggle-sidebar">
+                                <i class="gg-menu-right"></i>
+                            </button>
+                            <button class="btn btn-toggle sidenav-toggler">
+                                <i class="gg-menu-left"></i>
+                            </button>
+                        </div>
+                        <button class="topbar-toggler more">
+                            <i class="gg-more-vertical-alt"></i>
+                        </button>
                     </div>
-                </aside>
+                    <!-- End Logo Header -->
+                </div>
+                <!-- Navbar Header -->
+                @include('layouts.inc.navbar')
+                <!-- End Navbar -->
             </div>
 
-            <!-- Main Content -->
-            <div class="main-content">
-                <section class="section">
-                    <div class="section-header">
-                        <h1>Blank Page</h1>
+            <div class="container">
+                <div class="page-inner">
+                    <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
+                        <div>
+                            <h3 class="fw-bold mb-3">Dashboard</h3>
+                            <h6 class="op-7 mb-2">Free Bootstrap 5 Admin Dashboard</h6>
+                        </div>
+                        <div class="ms-md-auto py-2 py-md-0">
+                            <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
+                            <a href="#" class="btn btn-primary btn-round">Add Customer</a>
+                        </div>
                     </div>
-
-                    <div class="section-body">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-icon">
+                                            <div class="icon-big text-center icon-primary bubble-shadow-small">
+                                                <i class="fas fa-users"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col col-stats ms-3 ms-sm-0">
+                                            <div class="numbers">
+                                                <p class="card-category">Visitors</p>
+                                                <h4 class="card-title">1,294</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-icon">
+                                            <div class="icon-big text-center icon-info bubble-shadow-small">
+                                                <i class="fas fa-user-check"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col col-stats ms-3 ms-sm-0">
+                                            <div class="numbers">
+                                                <p class="card-category">Subscribers</p>
+                                                <h4 class="card-title">1303</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-icon">
+                                            <div class="icon-big text-center icon-success bubble-shadow-small">
+                                                <i class="fas fa-luggage-cart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col col-stats ms-3 ms-sm-0">
+                                            <div class="numbers">
+                                                <p class="card-category">Sales</p>
+                                                <h4 class="card-title">$ 1,345</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-icon">
+                                            <div class="icon-big text-center icon-secondary bubble-shadow-small">
+                                                <i class="far fa-check-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col col-stats ms-3 ms-sm-0">
+                                            <div class="numbers">
+                                                <p class="card-category">Order</p>
+                                                <h4 class="card-title">576</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card card-round">
+                                <div class="card-header">
+                                    <div class="card-head-row">
+                                        <div class="card-title">User Statistics</div>
+                                        <div class="card-tools">
+                                            <a href="#" class="btn btn-label-success btn-round btn-sm me-2">
+                                                <span class="btn-label">
+                                                    <i class="fa fa-pencil"></i>
+                                                </span>
+                                                Export
+                                            </a>
+                                            <a href="#" class="btn btn-label-info btn-round btn-sm">
+                                                <span class="btn-label">
+                                                    <i class="fa fa-print"></i>
+                                                </span>
+                                                Print
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-container" style="min-height: 375px">
+                                        <canvas id="statisticsChart"></canvas>
+                                    </div>
+                                    <div id="myChartLegend"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-primary card-round">
+                                <div class="card-header">
+                                    <div class="card-head-row">
+                                        <div class="card-title">Daily Sales</div>
+                                        <div class="card-tools">
+                                            <div class="dropdown">
+                                                <button class="btn btn-sm btn-label-light dropdown-toggle"
+                                                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    Export
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-category">March 25 - April 02</div>
+                                </div>
+                                <div class="card-body pb-0">
+                                    <div class="mb-4 mt-2">
+                                        <h1>$4,578.58</h1>
+                                    </div>
+                                    <div class="pull-in">
+                                        <canvas id="dailySalesChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-round">
+                                <div class="card-body pb-0">
+                                    <div class="h1 fw-bold float-end text-primary">+5%</div>
+                                    <h2 class="mb-2">17</h2>
+                                    <p class="text-muted">Users online</p>
+                                    <div class="pull-in sparkline-fix">
+                                        <div id="lineChart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-round">
+                                <div class="card-header">
+                                    <div class="card-head-row card-tools-still-right">
+                                        <h4 class="card-title">Users Geolocation</h4>
+                                        <div class="card-tools">
+                                            <button class="btn btn-icon btn-link btn-primary btn-xs">
+                                                <span class="fa fa-angle-down"></span>
+                                            </button>
+                                            <button class="btn btn-icon btn-link btn-primary btn-xs btn-refresh-card">
+                                                <span class="fa fa-sync-alt"></span>
+                                            </button>
+                                            <button class="btn btn-icon btn-link btn-primary btn-xs">
+                                                <span class="fa fa-times"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="card-category">
+                                        Map of the distribution of users around the world
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="table-responsive table-hover table-sales">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="flag">
+                                                                    <img src="assets/img/flags/id.png"
+                                                                        alt="indonesia" />
+                                                                </div>
+                                                            </td>
+                                                            <td>Indonesia</td>
+                                                            <td class="text-end">2.320</td>
+                                                            <td class="text-end">42.18%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="flag">
+                                                                    <img src="assets/img/flags/us.png"
+                                                                        alt="united states" />
+                                                                </div>
+                                                            </td>
+                                                            <td>USA</td>
+                                                            <td class="text-end">240</td>
+                                                            <td class="text-end">4.36%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="flag">
+                                                                    <img src="assets/img/flags/au.png"
+                                                                        alt="australia" />
+                                                                </div>
+                                                            </td>
+                                                            <td>Australia</td>
+                                                            <td class="text-end">119</td>
+                                                            <td class="text-end">2.16%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="flag">
+                                                                    <img src="assets/img/flags/ru.png"
+                                                                        alt="russia" />
+                                                                </div>
+                                                            </td>
+                                                            <td>Russia</td>
+                                                            <td class="text-end">1.081</td>
+                                                            <td class="text-end">19.65%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="flag">
+                                                                    <img src="assets/img/flags/cn.png"
+                                                                        alt="china" />
+                                                                </div>
+                                                            </td>
+                                                            <td>China</td>
+                                                            <td class="text-end">1.100</td>
+                                                            <td class="text-end">20%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="flag">
+                                                                    <img src="assets/img/flags/br.png"
+                                                                        alt="brazil" />
+                                                                </div>
+                                                            </td>
+                                                            <td>Brasil</td>
+                                                            <td class="text-end">640</td>
+                                                            <td class="text-end">11.63%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mapcontainer">
+                                                <div id="world-map" class="w-100" style="height: 300px"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-round">
+                                <div class="card-body">
+                                    <div class="card-head-row card-tools-still-right">
+                                        <div class="card-title">New Customers</div>
+                                        <div class="card-tools">
+                                            <div class="dropdown">
+                                                <button class="btn btn-icon btn-clean me-0" type="button"
+                                                    id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-list py-4">
+                                        <div class="item-list">
+                                            <div class="avatar">
+                                                <img src="assets/img/jm_denis.jpg" alt="..."
+                                                    class="avatar-img rounded-circle" />
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Jimmy Denis</div>
+                                                <div class="status">Graphic Designer</div>
+                                            </div>
+                                            <button class="btn btn-icon btn-link op-8 me-1">
+                                                <i class="far fa-envelope"></i>
+                                            </button>
+                                            <button class="btn btn-icon btn-link btn-danger op-8">
+                                                <i class="fas fa-ban"></i>
+                                            </button>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="avatar">
+                                                <span class="avatar-title rounded-circle border border-white">CF</span>
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Chandra Felix</div>
+                                                <div class="status">Sales Promotion</div>
+                                            </div>
+                                            <button class="btn btn-icon btn-link op-8 me-1">
+                                                <i class="far fa-envelope"></i>
+                                            </button>
+                                            <button class="btn btn-icon btn-link btn-danger op-8">
+                                                <i class="fas fa-ban"></i>
+                                            </button>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="avatar">
+                                                <img src="assets/img/talha.jpg" alt="..."
+                                                    class="avatar-img rounded-circle" />
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Talha</div>
+                                                <div class="status">Front End Designer</div>
+                                            </div>
+                                            <button class="btn btn-icon btn-link op-8 me-1">
+                                                <i class="far fa-envelope"></i>
+                                            </button>
+                                            <button class="btn btn-icon btn-link btn-danger op-8">
+                                                <i class="fas fa-ban"></i>
+                                            </button>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="avatar">
+                                                <img src="assets/img/chadengle.jpg" alt="..."
+                                                    class="avatar-img rounded-circle" />
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Chad</div>
+                                                <div class="status">CEO Zeleaf</div>
+                                            </div>
+                                            <button class="btn btn-icon btn-link op-8 me-1">
+                                                <i class="far fa-envelope"></i>
+                                            </button>
+                                            <button class="btn btn-icon btn-link btn-danger op-8">
+                                                <i class="fas fa-ban"></i>
+                                            </button>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="avatar">
+                                                <span
+                                                    class="avatar-title rounded-circle border border-white bg-primary">H</span>
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Hizrian</div>
+                                                <div class="status">Web Designer</div>
+                                            </div>
+                                            <button class="btn btn-icon btn-link op-8 me-1">
+                                                <i class="far fa-envelope"></i>
+                                            </button>
+                                            <button class="btn btn-icon btn-link btn-danger op-8">
+                                                <i class="fas fa-ban"></i>
+                                            </button>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="avatar">
+                                                <span
+                                                    class="avatar-title rounded-circle border border-white bg-secondary">F</span>
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Farrah</div>
+                                                <div class="status">Marketing</div>
+                                            </div>
+                                            <button class="btn btn-icon btn-link op-8 me-1">
+                                                <i class="far fa-envelope"></i>
+                                            </button>
+                                            <button class="btn btn-icon btn-link btn-danger op-8">
+                                                <i class="fas fa-ban"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card card-round">
+                                <div class="card-header">
+                                    <div class="card-head-row card-tools-still-right">
+                                        <div class="card-title">Transaction History</div>
+                                        <div class="card-tools">
+                                            <div class="dropdown">
+                                                <button class="btn btn-icon btn-clean me-0" type="button"
+                                                    id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <!-- Projects table -->
+                                        <table class="table align-items-center mb-0">
+                                            <thead class="thead-light">
+                                                <tr>
+                                                    <th scope="col">Payment Number</th>
+                                                    <th scope="col" class="text-end">Date & Time</th>
+                                                    <th scope="col" class="text-end">Amount</th>
+                                                    <th scope="col" class="text-end">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                        Payment from #10231
+                                                    </th>
+                                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                                                    <td class="text-end">$250.00</td>
+                                                    <td class="text-end">
+                                                        <span class="badge badge-success">Completed</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                        Payment from #10231
+                                                    </th>
+                                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                                                    <td class="text-end">$250.00</td>
+                                                    <td class="text-end">
+                                                        <span class="badge badge-success">Completed</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                        Payment from #10231
+                                                    </th>
+                                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                                                    <td class="text-end">$250.00</td>
+                                                    <td class="text-end">
+                                                        <span class="badge badge-success">Completed</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                        Payment from #10231
+                                                    </th>
+                                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                                                    <td class="text-end">$250.00</td>
+                                                    <td class="text-end">
+                                                        <span class="badge badge-success">Completed</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                        Payment from #10231
+                                                    </th>
+                                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                                                    <td class="text-end">$250.00</td>
+                                                    <td class="text-end">
+                                                        <span class="badge badge-success">Completed</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                        Payment from #10231
+                                                    </th>
+                                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                                                    <td class="text-end">$250.00</td>
+                                                    <td class="text-end">
+                                                        <span class="badge badge-success">Completed</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                                                            <i class="fa fa-check"></i>
+                                                        </button>
+                                                        Payment from #10231
+                                                    </th>
+                                                    <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                                                    <td class="text-end">$250.00</td>
+                                                    <td class="text-end">
+                                                        <span class="badge badge-success">Completed</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <footer class="main-footer">
-                <div class="footer-left">
-                    Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad
-                        Nauval Azhar</a>
-                </div>
-                <div class="footer-right">
 
-                </div>
-            </footer>
+            {{-- > FOOTER! < --}}
+            @include('layouts.inc.footer')
         </div>
-    </div>
 
-    <!-- General JS Scripts -->
+        <!-- Custom template | don't include it in your project! -->
+        <div class="custom-template">
+            <div class="title">Settings</div>
+            <div class="custom-content">
+                <div class="switcher">
+                    <div class="switch-block">
+                        <h4>Logo Header</h4>
+                        <div class="btnSwitch">
+                            <button type="button" class="selected changeLogoHeaderColor" data-color="dark"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="blue"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="purple"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="light-blue"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="green"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="orange"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="red"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="white"></button>
+                            <br />
+                            <button type="button" class="changeLogoHeaderColor" data-color="dark2"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="blue2"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="purple2"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="light-blue2"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="green2"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="orange2"></button>
+                            <button type="button" class="changeLogoHeaderColor" data-color="red2"></button>
+                        </div>
+                    </div>
+                    <div class="switch-block">
+                        <h4>Navbar Header</h4>
+                        <div class="btnSwitch">
+                            <button type="button" class="changeTopBarColor" data-color="dark"></button>
+                            <button type="button" class="changeTopBarColor" data-color="blue"></button>
+                            <button type="button" class="changeTopBarColor" data-color="purple"></button>
+                            <button type="button" class="changeTopBarColor" data-color="light-blue"></button>
+                            <button type="button" class="changeTopBarColor" data-color="green"></button>
+                            <button type="button" class="changeTopBarColor" data-color="orange"></button>
+                            <button type="button" class="changeTopBarColor" data-color="red"></button>
+                            <button type="button" class="selected changeTopBarColor" data-color="white"></button>
+                            <br />
+                            <button type="button" class="changeTopBarColor" data-color="dark2"></button>
+                            <button type="button" class="changeTopBarColor" data-color="blue2"></button>
+                            <button type="button" class="changeTopBarColor" data-color="purple2"></button>
+                            <button type="button" class="changeTopBarColor" data-color="light-blue2"></button>
+                            <button type="button" class="changeTopBarColor" data-color="green2"></button>
+                            <button type="button" class="changeTopBarColor" data-color="orange2"></button>
+                            <button type="button" class="changeTopBarColor" data-color="red2"></button>
+                        </div>
+                    </div>
+                    <div class="switch-block">
+                        <h4>Sidebar</h4>
+                        <div class="btnSwitch">
+                            <button type="button" class="changeSideBarColor" data-color="white"></button>
+                            <button type="button" class="selected changeSideBarColor" data-color="dark"></button>
+                            <button type="button" class="changeSideBarColor" data-color="dark2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-toggle">
+                <i class="icon-settings"></i>
+            </div>
+        </div>
+        <!-- End Custom template -->
+    </div>
+    <!--   Core JS Files   -->
     @include('layouts.inc.js')
 </body>
 
