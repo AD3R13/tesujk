@@ -247,8 +247,7 @@
                                     <p class="text-muted">{{ Auth::user()->email }}</p>
                                     <form action="{{ route('actionLogout') }}" method="post">
                                         @csrf
-                                        <button type="submit"
-                                            class="btn btn-xs btn-secondary btn-sm">Log-out</button>
+                                        <button type="submit" class="btn btn-xs btn-primary btn-sm">Log-out</button>
                                     </form>
                                 </div>
                             </div>

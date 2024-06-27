@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class PenggunaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('layouts.app');
+        return view('pengguna.index');
     }
 
     /**
@@ -19,7 +19,7 @@ class HomeController extends Controller
      */
     public function create()
     {
-        //
+        return view('pengguna.create');
     }
 
     /**
@@ -43,7 +43,7 @@ class HomeController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('pengguna.edit');
     }
 
     /**
@@ -60,10 +60,5 @@ class HomeController extends Controller
     public function destroy(string $id)
     {
         //
-    }
-
-    public function dashboard ()
-    {
-        return view('dashboard');
     }
 }

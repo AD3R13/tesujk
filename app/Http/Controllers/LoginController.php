@@ -9,17 +9,11 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    /* ! LOGIN ! */
+    public function login()
     {
         return view('login');
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
     public function actionLogin(Request $request)
     {
         $request->validate([
@@ -47,6 +41,7 @@ class LoginController extends Controller
     }
 
 
+    /* ! LOGOUT ! */
     public function actionLogout(Request $request)
     {
         Auth::logout(); // Logout pengguna
@@ -58,17 +53,11 @@ class LoginController extends Controller
     }
 
 
-    /**
-     * Store a newly created resource in storage.
-     */
+    /* ! REGISTER ! */
     public function register()
     {
         return view('register');
     }
-
-    /**
-     * Display the specified resource.
-     */
     public function actionRegister(Request $request)
     {
         $request->validate([
@@ -80,6 +69,7 @@ class LoginController extends Controller
         Alert::success('Daftar berhasil', 'Success Message!');
         return redirect()->to('register')->with('success', 'Daftar berhasil');
     }
+
 
     /**
      * Update the specified resource in storage.
