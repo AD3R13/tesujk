@@ -58,7 +58,7 @@
                 </div>
 
                 {{-- > FOOTER! < --}}
-            </div> --
+            </div>
             @include('layouts.inc.footer')
 
             <!-- Custom template | don't include it in your project! -->

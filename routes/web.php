@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LevelController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
 
@@ -19,5 +20,8 @@ Route::post('actionRegister', [LoginController::class, 'actionRegister'])->name(
 Route::post('actionLogin', [LoginController::class, 'actionLogin'])->name('actionLogin');
 Route::post('actionLogout', [LoginController::class, 'actionLogout'])->name('actionLogout');
 
-Route::resource('pengguna', PenggunaController::class);
+Route::middleware(['auth', 'administrator'])->group(function () {
 
+    Route::resource('pengguna', PenggunaController::class);
+    Route::resource('level', LevelController::class);
+});

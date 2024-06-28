@@ -36,7 +36,7 @@ class LoginController extends Controller
         }
 
         // Jika login gagal
-        Alert::info('Login gagal!', 'Mohon periksa kembali email dan password Anda.');
+        Alert::info('<i>LOGIN GAGAL!</i>', 'Periksa kembali email dan password Anda!');
         return back()->withInput($request->only('email'));
     }
 

@@ -61,7 +61,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="components/buttons.html">
+                                    <a href="{{ route('level.index') }}">
                                         <i class="fas fa-tasks"></i>
                                         <span>Level</span>
                                     </a>

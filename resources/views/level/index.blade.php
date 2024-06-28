@@ -1,14 +1,14 @@
 @extends('layouts.app')
 @section('content')
     @csrf
-    <h1 class="text-center">DATA PENGGUNA</h1>
+    <h1 class="text-center">DATA LEVEL</h1>
     <div class="row">
         <div class="col-md-8 col-lg-12">
             <div class="card card-round">
                 <div class="card-header">
                     <div class="card-head-row">
                         <div align="left" class="mb-3">
-                            <a href="{{ route('pengguna.create') }}" class="btn btn-primary btn-round"><i
+                            <a href="{{ route('level.create') }}" class="btn btn-primary btn-round"><i
                                     class="fas fa-plus"></i> Add</a>
                         </div>
                     </div>
@@ -20,25 +20,21 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama</th>
-                                        <th>Email</th>
                                         <th>Level</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($user as $user)
+                                    @foreach ($datas as $data)
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
-                                            <td>{{ $user->name }}</td>
-                                            <td>{{ $user->email }}</td>
-                                            <td>{{ $user->level->nama_level }}</td>
+                                            <td>{{ $data->nama_level }}</td>
                                             <td>
-                                                <a href="{{ route('pengguna.edit', $user->id) }}"
+                                                <a href="{{ route('level.edit', $data->id) }}"
                                                     class="btn btn-xs bg-primary">
                                                     <i class="fas fa-edit"> Edit</i>
                                                 </a>
-                                                <form action="{{ route('pengguna.destroy', $user->id) }}" method="POST"
+                                                <form action="{{ route('level.destroy', $data->id) }}" method="POST"
                                                     class="d-inline">
                                                     @csrf
                                                     <input type="hidden" name="_method" value="DELETE">
