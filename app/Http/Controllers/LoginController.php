@@ -24,15 +24,15 @@ class LoginController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
-            $user = Auth::user();
+            return redirect()->to('home');
 
-            if ($user->usertype == "admin-pelatihan") {
-                $request->session()->regenerate();
-                return redirect()->route('home', ['usertype' => $user->usertype]);
-            } else if ($user->usertype == "administrator") {
-                $request->session()->regenerate();
-                return redirect()->route('home', ['usertype' => $user->usertype]);
-            }
+            // if ($user->usertype == "admin-pelatihan") {
+            //     $request->session()->regenerate();
+            //     return redirect()->route('home', ['usertype' => $user->usertype]);
+            // } else if ($user->usertype == "administrator") {
+            //     $request->session()->regenerate();
+            //     return redirect()->route('home', ['usertype' => $user->usertype]);
+            // }
         }
 
         // Jika login gagal
