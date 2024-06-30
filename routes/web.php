@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\GelombangController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\LevelController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
@@ -24,4 +26,6 @@ Route::middleware(['auth', 'administrator'])->group(function () {
 
     Route::resource('pengguna', PenggunaController::class);
     Route::resource('level', LevelController::class);
+    Route::resource('jurusan', JurusanController::class);
+    Route::resource('gelombang', GelombangController::class);
 });

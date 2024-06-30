@@ -162,7 +162,16 @@
                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                   </div>
                 </div>
-
+                <div class="mb-3">
+                  <label for="username" class="form-label">Usertype</label>
+                  <select class="form-control" name="id_level" id="id_level" class="form-select"
+                                        aria-label="Default select example">
+                                        <option selected>Choose a usertype</option>
+                                        @foreach ($level as $data)
+<option value="{{ $data->id }}">{{ $data->nama_level }}</option>
+@endforeach
+                  </select>
+                </div>
                 <div class="mb-3">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="terms-conditions" name="terms" />

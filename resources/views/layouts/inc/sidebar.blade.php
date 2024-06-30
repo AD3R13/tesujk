@@ -67,13 +67,13 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="components/gridsystem.html">
+                                    <a href="{{ route('jurusan.index') }}">
                                         <i class="fas fa-list-ol"></i>
                                         <span>Jurusan</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="components/panels.html">
+                                    <a href="{{ route('gelombang.index') }}">
                                         <i class="far fa-chart-bar"></i>
                                         <span>Gelombang</span>
                                     </a>

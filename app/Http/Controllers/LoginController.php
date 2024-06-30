@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User  as User;
+use App\Models\Level;
 use Illuminate\Http\Request;
-use RealRashid\SweetAlert\Facades\Alert;
+use App\Models\User  as User;
 use Illuminate\Support\Facades\Auth;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class LoginController extends Controller
 {
@@ -56,13 +57,16 @@ class LoginController extends Controller
     /* ! REGISTER ! */
     public function register()
     {
-        return view('register');
+        $level = Level::all();
+        $usertype = User::with('level')->get();
+        return view('register', compact('usertype', 'level'));
     }
     public function actionRegister(Request $request)
     {
         $request->validate([
             'name' => 'required',
             'email' => 'required',
+            'id_level' => 'required',
             'password' => 'required',
         ]);
         User::create($request->all());

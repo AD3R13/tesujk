@@ -40,8 +40,8 @@
                                     <select class="form-control" name="id_level" id="id_level" class="form-select"
                                         aria-label="Default select example">
                                         <option selected>Choose a usertype</option>
-                                        @foreach ($level as $du)
-                                            <option value="{{ $du->id }}">{{ $du->nama_level }}</option>
+                                        @foreach ($level as $data)
+                                            <option value="{{ $data->id }}">{{ $data->nama_level }}</option>
                                         @endforeach
                                     </select>
                                 </div>
